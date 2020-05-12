@@ -11,7 +11,7 @@ console.log(avatar);
 function Home(props){
 
     return(
-        <div style={{width: '100%', margin: 'auto'}}>
+        <div style={{width: '100%'}}>
             <Grid className="landing-grid">
                 <Cell col={12}>
                     <img className="avatar-img" src={require('../Assets/Images/avatar.png')} />
