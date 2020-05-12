@@ -38,7 +38,7 @@ constructor(props){
   render(){
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 header-color" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Donnatella DeMarco</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
