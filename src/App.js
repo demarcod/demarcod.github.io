@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import WOW from 'wowjs';
 
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
@@ -34,7 +35,9 @@ constructor(props){
     }
   }
 }
-
+componentDidMount(){
+  new WOW.WOW().init();
+}
   render(){
     return (
       <Router>

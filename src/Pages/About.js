@@ -1,9 +1,12 @@
 import React from 'react';
+import { Grid } from 'react-mdl';
 
 function About(props){
 
     return(
-        <p>About Works!</p>
+        <Grid className="landing-grid">
+            <p>About Works!</p>
+        </Grid>
     );
 }
 
