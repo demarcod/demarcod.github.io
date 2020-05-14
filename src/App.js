@@ -42,8 +42,8 @@ componentDidMount(){
     return (
       <Router>
         <Container className="p-0 header-color" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Donnatella DeMarco</Navbar.Brand>
+          <Navbar className="border-bottom header-footer" bg="transparent" expand="lg">
+            <Navbar.Brand href="/" className="nav-link">Donnatella DeMarco</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">

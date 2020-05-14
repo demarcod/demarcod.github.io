@@ -57,12 +57,13 @@ class Contact extends React.Component{
                             <Form.Control id="message" name="message" as="textarea" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)}></Form.Control>
                         </Form.Group>
 
-                        <Button className="d-inline-block" variant="primary" type="submit">
+                        <Button className="d-inline-block" variant="primary" type="submit" disabled={!this.state.email || !this.state.message || !this.state.name}>
                             Send
                         </Button>
 
 
                     </Form>
+
                 </Content>
             </div>
         );

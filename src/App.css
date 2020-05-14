@@ -27,6 +27,10 @@ h6 {
   margin-bottom: 2%;
 }
 
+.header-footer {
+  font-family: 'Lato';
+}
+
 .social-links {
   display :flex;
   flex-wrap: wrap;
