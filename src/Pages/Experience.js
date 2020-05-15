@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../Components/Hero';
 import { Grid } from 'react-mdl';
 
-class About extends React.Component{
+class Experience extends React.Component{
 
     render(){
         return(
@@ -13,4 +13,4 @@ class About extends React.Component{
     }
 }
 
-export default About;
+export default Experience;

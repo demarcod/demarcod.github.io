@@ -9,6 +9,8 @@ import WOW from 'wowjs';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Experience from './Pages/Experience';
+import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 
 class App extends React.Component {
@@ -20,6 +22,8 @@ constructor(props){
     headerLinks: [
       { title: 'Home', path: '/' },
       { title: 'About', path: '/about' },
+      { title: 'Experience', path: '/experience' },
+      { title: 'Projects', path: '/projects' },
       { title: 'Contact', path: '/contact' }
     ],
     home: {
@@ -29,6 +33,12 @@ constructor(props){
     },
     about: {
       title: 'About Me'
+    },
+    experience: {
+      title: 'Experience'
+    },
+    projects: {
+      title: 'Projects'
     },
     contact: {
       title: 'Let\'s Talk'
@@ -49,6 +59,8 @@ componentDidMount(){
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/experience">Experience</Link>
+                <Link className="nav-link" to="/projects">Projects</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>          
@@ -56,6 +68,8 @@ componentDidMount(){
 
           <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
           <Route path="/about" render={() => <About title={this.state.about.title}/>} />
+          <Route path="/experience" render={() => <Experience title={this.state.experience.title}/>} />
+          <Route path="/projects" render={() => <Projects title={this.state.projects.title}/>} />
           <Route path="/contact" render={() => <Contact title={this.state.contact.title}/>} />
 
           <Footer />
