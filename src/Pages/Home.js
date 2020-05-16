@@ -20,23 +20,27 @@ function Home(props){
                         Feel free to browse around!</h6>
                     <div className="social-links wow animate__animated animate__bounce" data-wow-delay="1s">
                         {/* GitHub */}
-                        <a href="https://github.com/demarcod" rel="noopener noreferrer" target="_blank">
+                        <a href="https://github.com/demarcod" title="Github" rel="noopener noreferrer" target="_blank">
                             <i className="fa fa-github" aria-hidden="true" />
                         </a>
                         {/* LinkedIn */}
-                        <a href="https://www.linkedin.com/in/donnatella/" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.linkedin.com/in/donnatella/" title="LinkedIn" rel="noopener noreferrer" target="_blank">
                             <i className="fa fa-linkedin-square" aria-hidden="true" />
                         </a>
                         {/* Instagram */}
-                        <a href="https://www.instagram.com/missdonnatella/" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.instagram.com/missdonnatella/" title="Instagram" rel="noopener noreferrer" target="_blank">
                             <i className="fab fa-instagram" aria-hidden="true" />
                         </a>
+                        {/* Facebook */}
+                        <a href="https://www.facebook.com/donnatella.demarco" title="Facebook" rel="noopener noreferrer" target="_blank">
+                            <i className="fab fa-facebook" aria-hidden="true" />
+                        </a>
                         {/* Hackerrank*/}
-                        <a href="https://www.hackerrank.com/donnatella?hr_r=1" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.hackerrank.com/donnatella?hr_r=1" title="Hackerrank" rel="noopener noreferrer" target="_blank">
                             <i className="fab fa-hackerrank" aria-hidden="true" />
                         </a>
                         {/* FreeCodeCamp */}
-                        <a href="https://www.freecodecamp.org/demarcod" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.freecodecamp.org/demarcod" title="FreeCodeCamp" rel="noopener noreferrer" target="_blank">
                             <i className="fab fa-free-code-camp" aria-hidden="true" />
                         </a>                                                                                                
                     </div>

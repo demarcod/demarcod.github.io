@@ -8,6 +8,9 @@
   flex-direction: column;
 }
 
+.hero-label {
+  max-width: 100%;
+}
 
 .landing-grid {
   text-align: center;
