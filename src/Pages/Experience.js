@@ -9,7 +9,9 @@ class Experience extends React.Component{
         return(
             <div>
                 <Hero title={this.props.title} />
-                <Timeline />
+                <div className="experience-body">
+                    <Timeline />
+                </div>
             </div>
         );
     }

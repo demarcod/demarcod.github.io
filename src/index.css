@@ -24,8 +24,3 @@ code {
   color: #EE6352;
   padding: 10px 15px;
 }
-
-@media screen and (max-width: 480px) {
-  .hero-label {
-  font-size: 0.5em;
-  }}
