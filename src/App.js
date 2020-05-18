@@ -32,10 +32,10 @@ constructor(props){
       text: 'Checkout my projects below'
     },
     about: {
-      title: 'About Me'
+      title: 'About Me',
     },
     experience: {
-      title: 'Experience'
+      title: 'Experience',
     },
     projects: {
       title: 'Projects'

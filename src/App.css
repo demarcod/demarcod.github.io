@@ -8,10 +8,6 @@
   flex-direction: column;
 }
 
-.hero-label {
-  max-width: 100%;
-}
-
 .landing-grid {
   text-align: center;
   position: relative;
@@ -73,6 +69,10 @@ h6 {
   padding: 15px;
   max-width: 92%;
   width: 500px;
+  text-align: left;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content .timeline-title {
   text-align: right;
 }
 
@@ -159,7 +159,20 @@ h6 {
   white-space: pre-wrap;
 }
 
-@media only screen and (max-width: 767px) {
+.timeline-title {
+  font-weight: bold;
+}
+
+.timeline-company {
+  font-size: 120%;
+  margin-bottom: 7px;
+}
+
+.main-titles {
+  font-size: 6rem;
+}
+
+@media only screen and (max-width: 875px) {
   .timeline-item-content,
   .timeline-item:nth-child(odd) .timeline-item-content {
     padding: 15px 10px;
@@ -308,6 +321,14 @@ h6 {
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
   right: auto;
   left: -40px;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content .timeline-title {
+  text-align: left;
+}
+
+.main-titles {
+  font-size: 4rem;
 }
 
 }
