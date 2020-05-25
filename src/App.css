@@ -26,6 +26,12 @@ h6 {
   margin-bottom: 2%;
 }
 
+.skills-buttons {
+  margin: 5px;
+  background-color: lightcoral;
+
+}
+
 .timeline-container {
   display: flex;
   flex-direction: column;
