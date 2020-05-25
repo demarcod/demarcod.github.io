@@ -33,7 +33,7 @@ class Projects extends React.Component{
 
         var message = "";
         if(this.state.filter === undefined){
-            message = "Showing all projects. Click on a button above to filter by skill";
+            message = "Showing all projects. Click on a filter to list them by skill";
         } else if (num == 1){
             message = "Showing " + num + " project filtered by " + this.state.filter;
         } else {
@@ -42,18 +42,18 @@ class Projects extends React.Component{
 
         return(
             <div>
-                <Hero title={this.props.title} />
+                <Hero title={this.props.title} text2=" " />
                 <div>
                     <ul>
-                        <Button className="skills-buttons" onClick={() => this.setState({ filter: undefined })}>
+                        <button className="skills-buttons" onClick={() => this.setState({ filter: undefined })}>
                             SHOW ALL
-                        </Button>
+                        </button>
                         {skills.map(skills => (
-                            <Button className="skills-buttons" onClick={() => this.setState({ filter: skills.name })} title={"Filter by " + skills.name}>{skills.name}</Button>
+                            <button className="skills-buttons" onClick={() => this.setState({ filter: skills.name })} title={"Filter by " + skills.name}>{skills.name}</button>
                         ))}
                     </ul>
 
-                    <p>{message}</p>
+                    <p className="portfolio-message">{message}</p>
                     {posts.map(post => (
                         <div>
                             <p>{post.name}</p>

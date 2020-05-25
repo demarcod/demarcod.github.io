@@ -26,10 +26,48 @@ h6 {
   margin-bottom: 2%;
 }
 
-.skills-buttons {
-  margin: 5px;
-  background-color: lightcoral;
+.portfolio-message {
+  position: relative;
+  font-size: small;
+  margin-left: 50px ;
+  font-family: 'Lato';
+  text-transform: uppercase;
+}
 
+.skills-buttons {
+  position: relative;
+  margin: 5px;
+  margin-top: 0px;
+  color: #ff7675;
+  font-family: 'Lato';
+  font-weight: bold;
+  background-color:rgb(253, 213, 219);
+  opacity: 0.75;
+  border: 2px solid #ff7675;
+  padding: 11px 50px;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.skills-buttons:hover {
+  color: white;
+}
+
+.skills-buttons::before {
+  background-color: #ff7675;
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.skills-buttons:hover::before {
+  height: 100%;
 }
 
 .timeline-container {
@@ -179,6 +217,15 @@ h6 {
 }
 
 @media only screen and (max-width: 875px) {
+
+  .portfolio-message {
+    margin-left: 20px;
+  }
+
+  .skills-buttons{
+    padding: 5px 5px;
+  }
+
   .timeline-item-content,
   .timeline-item:nth-child(odd) .timeline-item-content {
     padding: 15px 10px;
