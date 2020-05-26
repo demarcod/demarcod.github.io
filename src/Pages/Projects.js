@@ -4,6 +4,8 @@ import portfolio from '../portfolio';
 import { Grid } from 'react-mdl';
 import Button from 'react-bootstrap/Button';
 import skills from '../skills';
+import { Link } from 'react-router-dom'
+import {Card, CardText, CardBody, CardTitle, CardActions, CardMenu, IconButton } from 'react-mdl';
 
 class Projects extends React.Component{
 
@@ -16,8 +18,8 @@ class Projects extends React.Component{
     
       componentDidMount() {
         this.setState({ status: "loading" });
-        Promise.resolve(portfolio)
-          .then(posts => this.setState({ posts, status: "idle" }))
+        Promise.resolve(portfolio.all())
+          .then(posts => this.setState({ posts, status: "idle"}))
           .catch(error => this.setState({ status: "error", error }));
       }
 
@@ -41,11 +43,11 @@ class Projects extends React.Component{
         }
 
         return(
-            <div>
-                <Hero title={this.props.title} text2=" " />
+            <div className="testtt">
+                <Hero title="Projects" text2=" " />
                 <div>
                     <ul>
-                        <button className="skills-buttons" onClick={() => this.setState({ filter: undefined })}>
+                        <button className="skills-buttons" onClick={() => this.setState({ filter: undefined })} title="Show all projects">
                             SHOW ALL
                         </button>
                         {skills.map(skills => (
@@ -54,11 +56,26 @@ class Projects extends React.Component{
                     </ul>
 
                     <p className="portfolio-message">{message}</p>
-                    {posts.map(post => (
-                        <div>
-                            <p>{post.name}</p>
+                    <div className="testing">
+                        <div className="testing1">
+                        {posts.map(post => (
+                            <div className="hello" style={{width: '345px', margin: '5px', border: '1px solid #ff7675', 'background-color': '#fff'}}>
+                                <CardTitle style={{color: '#ff7675', height: '35px', 'font-family': 'Lato', 'margin': ' 1.5px 15px'}}>{post.name}</CardTitle>
+                                <time style={{color: '#777', 'font-family': 'Lato', 'font-size': 'small', 'margin': '20px' }}>{post.date}</time>
+                                <CardTitle style={{color: '#fff', 'margin-top': '10px', height: '176px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(/logo192.png) center / cover'}}></CardTitle>
+                                <CardText style={{margin: '20px 5px', color: 'grey', "font-family": 'Lato'}}>
+                                    {post.description}
+                                </CardText>
+                                <div className="desc-container">
+                                    <a className="desc" href={post.github} rel="noopener noreferrer" target="_blank">GitHub</a>
+                                    <Link className="desc" to={`/projects/${post.name}`}>Learn More</Link>
+                                </div>
+                                <CardMenu style={{color: '#fff'}}>
+                                </CardMenu>
+                            </div>
+                      ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
             </div>
         );

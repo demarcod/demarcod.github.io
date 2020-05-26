@@ -10,8 +10,9 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Experience from './Pages/Experience';
-import Projects from './Pages/Projects';
+import Project from './Pages/Project';
 import Contact from './Pages/Contact';
+import Details from './Pages/Details';
 
 class App extends React.Component {
 
@@ -42,6 +43,9 @@ constructor(props){
     },
     contact: {
       title: 'Let\'s Talk'
+    },
+    details: {
+      title: 'Let\'s Talk'
     }
   }
 }
@@ -69,7 +73,7 @@ componentDidMount(){
           <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
           <Route path="/about" render={() => <About title={this.state.about.title}/>} />
           <Route path="/experience" render={() => <Experience title={this.state.experience.title}/>} />
-          <Route path="/projects" render={() => <Projects title={this.state.projects.title}/>} />
+          <Route path="/projects" render={() => <Project title={this.state.projects.title}/>} />
           <Route path="/contact" render={() => <Contact title={this.state.contact.title}/>} />
 
           <Footer />
