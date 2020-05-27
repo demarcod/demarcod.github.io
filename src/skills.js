@@ -1,21 +1,33 @@
 const skills =[
     {
-        name: 'REACT'
+        name: 'ANGULAR'
+    },
+    {
+        name: 'BACK-END'
     },
     {
         name: 'FRONT-END',
     },
     {
-        name: 'UX-UI',
+        name: 'JAVASCRIPT',
     },
     {
         name: 'MOBILE'
     },
     {
+        name: 'PHP'
+    },
+    {
         name: 'PYTHON'
     },
     {
+        name: 'REACT'
+    },
+    {
         name: 'RESEARCH'
+    },
+    {
+        name: 'UX-UI'
     }
 ];
 

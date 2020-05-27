@@ -8,18 +8,101 @@
   flex-direction: column;
 }
 
-.testing {
-  text-align: left;
-  align-content: center;
-  margin: auto;
+.resources-text {
+  font-family: 'Lato';
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.back-link {
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 30px;
+  font-family: 'Lato';
+  color: #333;
+}
+
+.slide {
+  text-align: center;
+}
+ 
+.slide-logo {
+  height: 40vmin;
+}
+ 
+.slide-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+
+.project-title {
+  margin-left: 5%;
+  margin-top: 5%;
+  border-bottom: 1px solid #333;
+}
+
+.project-item {
+  font-family: 'Lato';
+  padding: 5px 0px;
+  font-size: 20px;
+}
+
+.project-list {
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .testing1 {
-  justify-content: center;
   display: flex;
+  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto;
+  margin-left: 5%;
+}
+
+.detail-title {
+  font-size: 60px;
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+.detail-description {
+  font-family: 'Lato';
+  margin: 5px 100px;
+
 }
 
 .desc{
@@ -244,6 +327,17 @@ h6 {
 }
 
 @media only screen and (max-width: 875px) {
+
+
+
+  .slide {
+    padding: '0px 30px';
+  }
+
+  .detail-description {
+    font-size: 25px;
+    margin: 8px;
+  }
 
   .portfolio-message {
     margin-left: 20px;

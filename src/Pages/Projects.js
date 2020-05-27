@@ -60,20 +60,20 @@ class Projects extends React.Component{
                         <div className="testing1">
                         {posts.map(post => (
                             <div className="hello" style={{width: '345px', margin: '5px', border: '1px solid #ff7675', 'background-color': '#fff'}}>
-                                <CardTitle style={{color: '#ff7675', height: '35px', 'font-family': 'Lato', 'margin': ' 1.5px 15px'}}>{post.name}</CardTitle>
+                                <a style={{color: '#ff7675', height: '35px', 'font-size': '32px', 'font-family': 'Lato', 'margin': ' 1.5px 15px', 'display': 'flex', 'flex-direction': 'column'}} href={`/projects/${post.name}`}>{post.name}</a>
                                 <time style={{color: '#777', 'font-family': 'Lato', 'font-size': 'small', 'margin': '20px' }}>{post.date}</time>
-                                <CardTitle style={{color: '#fff', 'margin-top': '10px', height: '176px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(/logo192.png) center / cover'}}></CardTitle>
+                                <CardTitle style={{color: '#fff', 'margin-top': '10px', height: '250px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(' + post.mainImage + ') center / cover'}}></CardTitle>
                                 <CardText style={{margin: '20px 5px', color: 'grey', "font-family": 'Lato'}}>
                                     {post.description}
                                 </CardText>
                                 <div className="desc-container">
                                     <a className="desc" href={post.github} rel="noopener noreferrer" target="_blank">GitHub</a>
-                                    <Link className="desc" to={`/projects/${post.name}`}>Learn More</Link>
+                                    <a className="desc" href={`/projects/${post.name}`}>Learn More</a>
                                 </div>
                                 <CardMenu style={{color: '#fff'}}>
                                 </CardMenu>
                             </div>
-                      ))}
+                        ))}
                         </div>
                     </div>
                 </div>
