@@ -20,7 +20,7 @@ const data =[
     jobTitle: 'Full-Time Student',
     text: '•CIDC Business',
     points: ['Graduated in Oct 2019 with a Bachelor of Computer Science Honours with Co-op',
-        'Took part in an 8-month research project entitled "The Piano Project" where I had the opportunity to study neural networks and how to analyze sheet music using Python'],
+        'Took part in an 8-month research project entitled "The Piano Project" where I had the opportunity to study neural networks and discovered how to analyze sheet music using Python'],
     date: 'September 2015 - October 2019',
     category: {
         tag: 'Education/Research',
