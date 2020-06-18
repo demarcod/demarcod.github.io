@@ -14,9 +14,9 @@ function Home(props){
             <Grid className="landing-grid">
                 <Cell col={12}>
                     <div className="wow animate__animated animate__fadeInDown">
-                        <img className="avatar-img" src={require('../Assets/Images/avatar.png')} />
+                        <img className="avatar-img" src={require('../Assets/Images/profile_png.png')} />
                         <h1>Donnatella DeMarco</h1>
-                        <h6>Welcome! I'm a passionate Software Developer always on the lookout for a new challenge.<br/>
+                        <h6 className="home-desc">Welcome! I'm a passionate Software Developer always on the lookout for a new challenge.<br/>
                         Feel free to browse around!</h6>
                     <div className="social-links wow animate__animated animate__bounce" data-wow-delay="1s">
                         {/* GitHub */}
