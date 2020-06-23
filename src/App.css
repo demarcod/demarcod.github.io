@@ -22,6 +22,7 @@
 .project-tags:hover {
   background-color: black;
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .project-tags-text {
@@ -30,14 +31,19 @@
   justify-content: space-evenly;
   padding: 50px;
   border: 50px;
+  text-decoration: none;
 }
 
+.project-tags-text:hover {
+  text-decoration: none;
+}
 .tag {
   padding: 5px 10px;
   border: 1px #ff7675 solid;
   border-radius: 25px;
   font-family: 'Lato';
   font-weight: bold;
+  color: white;
 }
 
 .example .tag {

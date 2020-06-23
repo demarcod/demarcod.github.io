@@ -64,11 +64,11 @@ class Projects extends React.Component{
                                 <time style={{color: '#777', 'font-family': 'Lato', 'font-size': 'small', 'margin': '20px' }}>{post.date}</time>
                                 <CardTitle className="example" style={{color: '#fff', 'margin-top': '10px', height: '250px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(' + post.mainImage + ') center / cover'}}>
                                     <div className="project-tags">
-                                            <div className="project-tags-text">
+                                            <a href={`/projects/${post.name}`} className="project-tags-text">
                                                 {post.category.map(function(name, index){
                                                     return <p className="title tag" key={ index }>{name}</p>;
                                                 })}
-                                            </div>
+                                            </a>
                                     </div>
                                 </CardTitle>
                                 <CardText style={{margin: '20px 5px', color: 'grey', "font-family": 'Lato'}}>
