@@ -56,13 +56,21 @@ class Projects extends React.Component{
                     </ul>
 
                     <p className="portfolio-message">{message}</p>
-                    <div className="testing">
+
                         <div className="testing1">
                         {posts.map(post => (
                             <div className="hello" style={{width: '345px', margin: '5px', border: '1px solid #ff7675', 'background-color': '#fff'}}>
                                 <a style={{color: '#ff7675', height: '35px', 'font-size': '32px', 'font-family': 'Lato', 'margin': ' 1.5px 15px', 'display': 'flex', 'flex-direction': 'column'}} href={`/projects/${post.name}`}>{post.name}</a>
                                 <time style={{color: '#777', 'font-family': 'Lato', 'font-size': 'small', 'margin': '20px' }}>{post.date}</time>
-                                <CardTitle style={{color: '#fff', 'margin-top': '10px', height: '250px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(' + post.mainImage + ') center / cover'}}></CardTitle>
+                                <CardTitle className="example" style={{color: '#fff', 'margin-top': '10px', height: '250px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(' + post.mainImage + ') center / cover'}}>
+                                    <div className="project-tags">
+                                            <div className="project-tags-text">
+                                                {post.category.map(function(name, index){
+                                                    return <p className="title tag" key={ index }>{name}</p>;
+                                                })}
+                                            </div>
+                                    </div>
+                                </CardTitle>
                                 <CardText style={{margin: '20px 5px', color: 'grey', "font-family": 'Lato'}}>
                                     {post.description}
                                 </CardText>
@@ -75,7 +83,7 @@ class Projects extends React.Component{
                             </div>
                         ))}
                         </div>
-                    </div>
+
                 </div>
             </div>
         );

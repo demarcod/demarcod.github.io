@@ -44,7 +44,7 @@ const Details = (props) => {
         </div>
         <div style={{'padding-bottom': '50px'}}>
             <h1 className="project-title">About this project</h1>
-            <p>{detail.longDesc}</p>
+            <p className="projects-text">{detail.longDesc}</p>
             <h1 className="project-title">Technologies/skills used</h1>
             <ul className="project-list">
                 {detail.category.map((skill) => {
@@ -56,7 +56,7 @@ const Details = (props) => {
                 })}
             </ul>
             <h1 className="project-title">Resources</h1>
-            <p className="resources-text">Like what you see? Explore this project more using the resources below!</p>
+            <p className="projects-text">Like what you see? Explore this project more using the resource(s) below!</p>
             <ul className="project-list">
                 {detail.resources.map((resource) => {
                     return(
