@@ -44,14 +44,14 @@ const portfolio ={
             github: 'google.com',
             mainImage: '/temp1.png',
             images: [{desc: 'Project in progress - images coming soon', photo: '/temp2.png'}],
-            longDesc: "",
+            longDesc: "Full Stack mobile application created using an Angular framework. Functionalities include allowing users to convert values to different units of measurement. This project helped me expand my knowledge of Angular and Typescript, and also got me familiar with mobile development within an Ionic framework.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/Piano-Project'}
             ]
         },
         {
             name: 'CIDC Website',
-            date: 'March 2020 - Present',
+            date: 'April 2020 - Present',
             description: 'Website I created for a new medical business, CIDC, using React, including an appointment scheduling application',
             category: ['REACT', 'UX-UI', 'FRONT-END'],
             github: 'google.com',
@@ -72,7 +72,7 @@ const portfolio ={
             github: 'https://github.com/demarcod/Astro-Pizza',
             mainImage: '/astro-pizza2.png',
             images: [{desc: 'Ordering Page', photo: '/astro-pizza2.png'},{desc: 'Ordering Page', photo: '/astro-pizza2.png'}],
-            longDesc: "",
+            longDesc: "Full stack web application for a final project for a web development course I took in my final year of University using the LAMP stack. I had the opportunity to collaborate with a group of my peers to create a website for ordering pizza. My main contribution entailed creating the ordering page that allowed users to interactively select or delete toppings and preferences. This project got me familiar with JavaScript, HTML, CSS, PHP, and Form Handling. Aside from placing an order, users may also email the company, or create or log in to an account.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/Astro-Pizza'}
             ]

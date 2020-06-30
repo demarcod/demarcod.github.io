@@ -30,20 +30,22 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 50px;
-  border: 50px;
   text-decoration: none;
+  height: 250px;
 }
 
 .project-tags-text:hover {
   text-decoration: none;
 }
-.tag {
+.project-tag {
   padding: 5px 10px;
   border: 1px #ff7675 solid;
   border-radius: 25px;
+  font-size: 17px;
   font-family: 'Lato';
   font-weight: bold;
   color: white;
+  height: 36px;
 }
 
 .example .tag {
@@ -234,6 +236,19 @@ hr {
   grid-template-columns: repeat(auto-fill, minmax(345px, 0fr)); /* see notes below */
   grid-gap: 1em;
   justify-content: center;
+}
+
+.contact-link {
+  color: black;
+  font-size: 11em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  padding: 0px 50px;
+}
+
+.contact-link a {
+  color: black;
 }
 
 .hello {

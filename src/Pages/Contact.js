@@ -40,8 +40,8 @@ class Contact extends React.Component{
     render() {
         return(
             <div>
-                <Hero title={this.props.title} />
-
+                <Hero title={this.props.title} text3=" "/>
+                {/*
                 <Content>
                     <Form onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <Form.Group>
@@ -65,6 +65,21 @@ class Contact extends React.Component{
                     </Form>
 
                 </Content>
+                */}
+                <div className="contact-link">
+                    <a href="mailto:donnatella.maria@gmail.com?" title="Email">
+                        <i className="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/demarcod" title="Github" rel="noopener noreferrer" target="_blank">
+                        <i className="fa fa-github" aria-hidden="true" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/donnatella/" title="LinkedIn" rel="noopener noreferrer" target="_blank">
+                        <i className="fa fa-linkedin-square" aria-hidden="true" />
+                    </a>
+                    <a href="https://www.facebook.com/donnatella.demarco" title="Facebook" rel="noopener noreferrer" target="_blank">
+                            <i className="fab fa-facebook" aria-hidden="true" />
+                    </a>
+                </div>
             </div>
         );
     }

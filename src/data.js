@@ -5,7 +5,7 @@ const data =[
     text: 'CIDC Business Website - Full Stack Developer',
     points: ['Designing a website for a new medical business, including an appointment scheduling application',
         'Implemented using HTML, CSS, JavaScript, Bootstrap, and PHP'],
-    date: 'December 2019 - Now',
+    date: 'April 2020 - Now',
     category: {
         tag: 'Contract',
         color: '#018f69'

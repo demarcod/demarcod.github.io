@@ -18,6 +18,8 @@ function Hero(props) {
                             A PDF version of my resume can be downloaded <a href="Donnatella_Resume_PDF.pdf" download>here</a>. Otherwise, feel free to browse the timeline below!</h3> }
                         { props.text2 && <h3 className="lead font-weight-light" style={{ fontFamily: 'Lato' }}>
                             Welcome to my projects page! Feel free to look around and use the filters below to view my projects by skill.</h3> }
+                        { props.text3 && <h3 className="lead font-weight-light" style={{ fontFamily: 'Lato' }}>
+                            Got any questions? Want to collaborate? Reach out using any of the options below and I'll get back to you as soon as possible!</h3> }
                     </Col>
                 </Row>
             </Container>

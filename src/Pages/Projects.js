@@ -66,7 +66,7 @@ class Projects extends React.Component{
                                     <div className="project-tags">
                                             <a href={`/projects/${post.name}`} className="project-tags-text">
                                                 {post.category.map(function(name, index){
-                                                    return <p className="title tag" key={ index }>{name}</p>;
+                                                    return <p className="title project-tag" key={ index }>{name}</p>;
                                                 })}
                                             </a>
                                     </div>
