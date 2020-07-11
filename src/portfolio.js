@@ -12,9 +12,10 @@ const portfolio ={
                 {desc: 'About Page', photo: '/portfolio2.png'},
                 {desc: 'Experience Page', photo: '/portfolio3.png'},
                 {desc: 'Projects Page', photo: '/portfolio4.png'},
-                {desc: 'Contact Page', photo: '/portfolio5.png'}
+                {desc: 'Contact Page v.1', photo: '/portfolio5.png'},
+                {desc: 'Contact Page v.2', photo: '/portfolio6.png'}
             ],
-            longDesc: "Seems kind of redundant to include my own portfolio site in my projects list, eh? Well I'm quite proud of my work here, so I figured why not pop it in? It's my first website I've created using a React framework and it helped me solidify my skills in Javascript, HTML, CSS, Form Handling, and exploring how to make a website responsive.",
+            longDesc: "Seems kind of redundant to include my own portfolio site in my projects list, eh? Well I'm quite proud of my work here, so I figured why not pop it in? It's my first website I've created using a React framework and it helped me solidify my skills in Javascript, HTML, CSS, Form Handling, and exploring how to make a website responsive. I made two different versions of the contact page. The other version is available on my github in the commented-out section of the about page. It is fully functional and involves form-handling using Axios.js.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/demarcod.github.io'}
             ]
@@ -35,8 +36,7 @@ const portfolio ={
                 {text: 'Github', link: 'https://github.com/demarcod/Piano-Project'}
             ]
         },
-
-        {
+        /*{
             name: 'Unit Converter',
             date: 'April 2020 - May 2020',
             description: 'Basic Unit Converter application I created with a friend using an Ionic framework in order to gain experience with mobile development',
@@ -59,20 +59,25 @@ const portfolio ={
             images: [
                 {desc: 'Project in progress - images coming soon', photo: '/temp2.png'}
             ],
-            longDesc: "Business website for CIDC (Comprehensive Infectious Diseases Consultants) built using React.",
+            longDesc: "Full stack website for the medical business CIDC. Built using a React framework. With the opportunity of telemedicine being prevalent with this business, I'm currently also building/incorporating an appointment scheduling application.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/Piano-Project'}
             ]
-        },
+        },*/
         {
             name: 'Astro-Pizza',
             date: 'Jan 2019 - May 2019',
             description: 'Web development project for a pizza-ordering website that allows users to create an account and interactively select toppings',
             category: ['BACK-END', 'CSS', 'FRONT-END', 'HTML', 'JAVASCRIPT', 'PHP', 'UX-UI'],
             github: 'https://github.com/demarcod/Astro-Pizza',
-            mainImage: '/astro-pizza2.png',
-            images: [{desc: 'Ordering Page', photo: '/astro-pizza2.png'},{desc: 'Ordering Page', photo: '/astro-pizza2.png'}],
-            longDesc: "Full stack web application for a final project for a web development course I took in my final year of University using the LAMP stack. I had the opportunity to collaborate with a group of my peers to create a website for ordering pizza. My main contribution entailed creating the ordering page that allowed users to interactively select or delete toppings and preferences. This project got me familiar with JavaScript, HTML, CSS, PHP, and Form Handling. Aside from placing an order, users may also email the company, or create or log in to an account.",
+            mainImage: '/astro-pizza1.png',
+            images: [
+                {desc: 'Ordering Page', photo: '/astro-pizza2.png'},
+                {desc: 'Contact/Email Page', photo: '/astro-pizza3.png'},
+                {desc: 'Home/Log-in Page', photo: '/astro-pizza4.png'},
+                {desc: 'Sign-up Page', photo: '/astro-pizza5.png'}
+            ],
+            longDesc: "Full stack web application for a final project for a web development course I took in my final year of University using the LAMP stack. I had the opportunity to collaborate with a group of my peers to create a website for ordering pizza. My main contribution entailed creating the ordering page that allowed users to interactively select or delete toppings and preferences. This project got me familiar with JavaScript, HTML, CSS, PHP, and Form Handling. Aside from placing an order, users may also email the company directly from the website, or create/log in to an account.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/Astro-Pizza'}
             ]

@@ -1,8 +1,5 @@
 const skills =[
     {
-        name: 'ANGULAR'
-    },
-    {
         name: 'BACK-END'
     },
     {
@@ -10,9 +7,6 @@ const skills =[
     },
     {
         name: 'JAVASCRIPT',
-    },
-    {
-        name: 'MOBILE'
     },
     {
         name: 'PHP'

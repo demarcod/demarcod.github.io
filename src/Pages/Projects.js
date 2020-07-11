@@ -1,11 +1,8 @@
 import * as React from "react";
 import Hero from '../Components/Hero';
 import portfolio from '../portfolio';
-import { Grid } from 'react-mdl';
-import Button from 'react-bootstrap/Button';
 import skills from '../skills';
-import { Link } from 'react-router-dom'
-import {Card, CardText, CardBody, CardTitle, CardActions, CardMenu, IconButton } from 'react-mdl';
+import { CardText, CardTitle, CardMenu } from 'react-mdl';
 
 class Projects extends React.Component{
 
@@ -43,7 +40,7 @@ class Projects extends React.Component{
         }
 
         return(
-            <div className="testtt">
+            <div>
                 <Hero title="Projects" text2=" " />
                 <div>
                     <ul>
@@ -57,12 +54,12 @@ class Projects extends React.Component{
 
                     <p className="portfolio-message">{message}</p>
 
-                        <div className="testing1">
+                        <div className="project-card">
                         {posts.map(post => (
-                            <div className="hello" style={{width: '345px', margin: '5px', border: '1px solid #ff7675', 'background-color': '#fff'}}>
-                                <a style={{color: '#ff7675', height: '35px', 'font-size': '32px', 'font-family': 'Lato', 'margin': ' 1.5px 15px', 'display': 'flex', 'flex-direction': 'column'}} href={`/projects/${post.name}`}>{post.name}</a>
-                                <time style={{color: '#777', 'font-family': 'Lato', 'font-size': 'small', 'margin': '20px' }}>{post.date}</time>
-                                <CardTitle className="example" style={{color: '#fff', 'margin-top': '10px', height: '250px', 'border-top': '1px solid #ff7675', 'border-bottom': '1px solid #ff7675', 'background': 'url(' + post.mainImage + ') center / cover'}}>
+                            <div className="project-card-item">
+                                <a className="project-card-name" href={`/projects/${post.name}`}>{post.name}</a>
+                                <time className="project-card-date">{post.date}</time>
+                                <CardTitle className="project-card-image" style={{'background': 'url(' + post.mainImage + ') center / cover'}}>
                                     <div className="project-tags">
                                             <a href={`/projects/${post.name}`} className="project-tags-text">
                                                 {post.category.map(function(name, index){
@@ -71,12 +68,12 @@ class Projects extends React.Component{
                                             </a>
                                     </div>
                                 </CardTitle>
-                                <CardText style={{margin: '20px 5px', color: 'grey', "font-family": 'Lato'}}>
+                                <CardText className="project-card-description">
                                     {post.description}
                                 </CardText>
-                                <div className="desc-container">
-                                    <a className="desc" href={post.github} rel="noopener noreferrer" target="_blank">GitHub</a>
-                                    <a className="desc" href={`/projects/${post.name}`}>Learn More</a>
+                                <div className="project-card-links">
+                                    <a className="project-card-link" href={post.github} rel="noopener noreferrer" target="_blank">GitHub</a>
+                                    <a className="project-card-link" href={`/projects/${post.name}`}>Learn More</a>
                                 </div>
                                 <CardMenu style={{color: '#fff'}}>
                                 </CardMenu>

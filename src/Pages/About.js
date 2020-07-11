@@ -15,7 +15,7 @@ function About(props){
                         <h5 className="about-text-title">ABOUT</h5>
                         <hr/>
                         <div className="about-text-content">
-                            <p>I'm Donnatella DeMarco - a highly motivated and ambitious Software Developer with just a little under 2 years of professional experience. I'm experienced primarily in full-stack development, web design, and research.</p>
+                            <p>I'm Donnatella DeMarco - a highly motivated and ambitious Software Developer with 2 years of professional experience. I'm experienced primarily in full-stack development, web design, and research.</p>
                             <p>I'm currently on the lookout for an exciting employment opportunity or a new project to be involved in. <a href="/Contact">Contact me</a> if you like what you see and want to collaborate!</p>
                         </div>
                         <h5 className="about-text-title">EDUCATION</h5>
@@ -29,6 +29,11 @@ function About(props){
                         <hr/>
                         <div className="about-text-content">
                             <ul>
+                                <li>ANGULAR</li>
+                                <li>JAVA</li>
+                                <li>POWERSHELL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
                                 {skills.map(skills => (
                                     <li>{skills.name}</li>
                                 ))}
