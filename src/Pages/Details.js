@@ -45,7 +45,7 @@ const Details = (props) => {
         <div style={{'padding-bottom': '50px'}}>
             <h1 className="project-title">About this project</h1>
             <p className="project-text">{detail.longDesc}</p>
-            <h1 className="project-title">Technologies/skills used</h1>
+            <h1 className="project-title">Technologies & skills used</h1>
             <ul className="project-list">
                 {detail.category.map((skill) => {
                     return(

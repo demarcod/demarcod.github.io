@@ -11,7 +11,7 @@ function Home(props){
                 <Cell col={12}>
                     <div className="wow animate__animated animate__fadeInDown">
                         <img className="avatar-img" src={require('../Assets/Images/avatar.png')} />
-                        <h1>Donnatella DeMarco</h1>
+                        <h1 className="home-title">Donnatella DeMarco</h1>
                         <h6 className="home-desc">Welcome! I'm a passionate Software Developer always on the lookout for a new challenge.<br/>
                         Feel free to browse around!</h6>
                         <div className="social-links wow animate__animated animate__bounce" data-wow-delay="1s">

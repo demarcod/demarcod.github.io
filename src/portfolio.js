@@ -15,7 +15,7 @@ const portfolio ={
                 {desc: 'Contact Page v.1', photo: '/portfolio5.png'},
                 {desc: 'Contact Page v.2', photo: '/portfolio6.png'}
             ],
-            longDesc: "Seems kind of redundant to include my own portfolio site in my projects list, eh? Well I'm quite proud of my work here, so I figured why not pop it in? It's my first website I've created using a React framework and it helped me solidify my skills in Javascript, HTML, CSS, Form Handling, and exploring how to make a website responsive. I made two different versions of the contact page. The other version is available on my github in the commented-out section of the about page. It is fully functional and involves form-handling using Axios.js.",
+            longDesc: "Seems kind of redundant to include my own portfolio site in my projects list, eh? Well I'm quite proud of my work here and wanted to share how I created it, so I figured why not pop it in? It's my first website I've created using a React framework and it helped me solidify my skills in Javascript, HTML, CSS, Form Handling, and exploring how to make a website responsive. I made two different versions of the contact page. The other version is available on my github in the commented-out section of the contact page. It is fully functional and involves form-handling using Axios.js.",
             resources: [
                 {text: 'Github', link: 'https://github.com/demarcod/demarcod.github.io'}
             ]
