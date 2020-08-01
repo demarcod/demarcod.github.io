@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/form';
 import Button from 'react-bootstrap/Button';
 import Axios from 'axios';
 
-
 class Contact extends React.Component{
 
     constructor(props) {
@@ -17,6 +16,10 @@ class Contact extends React.Component{
         }
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     handleSubmit(e){
         e.preventDefault();
         Axios({
@@ -38,6 +41,7 @@ class Contact extends React.Component{
     }
     
     render() {
+        localStorage.clear()
         return(
             <div>
                 <Hero title={this.props.title} text3=" "/>

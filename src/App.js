@@ -1,18 +1,24 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 import WOW from 'wowjs';
+import { BrowserRouter } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+
 
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Experience from './Pages/Experience';
 import Project from './Pages/Project';
+import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 import Details from './Pages/Details';
+
+const history = createBrowserHistory();
 
 class App extends React.Component {
 
@@ -54,7 +60,7 @@ componentDidMount(){
 }
   render(){
     return (
-      <Router>
+      <Router history={history}>
         <Container className="p-0 header-color" fluid={true}>
           <Navbar className="border-bottom header-footer" bg="transparent" expand="lg">
             <Navbar.Brand href="/" className="nav-link">Donnatella DeMarco</Navbar.Brand>
@@ -73,7 +79,8 @@ componentDidMount(){
           <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
           <Route path="/about" render={() => <About title={this.state.about.title}/>} />
           <Route path="/experience" render={() => <Experience title={this.state.experience.title}/>} />
-          <Route path="/projects" render={() => <Project title={this.state.projects.title}/>} />
+          <Route path="/projects" render={() => <Projects title={this.state.projects.title}/>} />
+          <Route path="/projects-details" render={() => <Details title={this.state.details.title}/>} />
           <Route path="/contact" render={() => <Contact title={this.state.contact.title}/>} />
 
           <Footer />

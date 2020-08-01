@@ -5,8 +5,10 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-const Details = (props) => {
+const thing = localStorage.getItem('name')
 
+const Details = (props) => {
+    window.scrollTo(0, 0)
     const settings = {
         dots: true,
         fade: true,
@@ -19,11 +21,15 @@ const Details = (props) => {
     }
 
     const detail = Portfolio.get(
-        props.match.params.name
+        localStorage.getItem('name'),
     )
 
     if (!detail) {
-        return <div>Sorry, but the project was not found</div>
+        return (
+            <div className="no-detail">
+                <h1 className="thing">Pick a project from the&nbsp;<a className="thingy wow animate__animated animate__pulse" href=".#/projects">projects page</a>&nbsp;to view its details!</h1>
+            </div>
+        )
     }
 
   return (

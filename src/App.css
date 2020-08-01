@@ -413,6 +413,22 @@ h6 {
 }
 
 /* Project Details Page */
+.no-detail {
+  display: flex; 
+  justify-content: center;
+  padding: 100px 10px;
+  font-family: 'Lato';
+}
+
+.thing {
+  font-family: 'Lato';
+}
+
+.thingy {
+  display: inline-block;
+  animation-duration: 2s;
+}
+
 .detail-title {
   font-size: 60px;
   margin: 50px;

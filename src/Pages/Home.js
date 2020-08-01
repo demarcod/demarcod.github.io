@@ -5,6 +5,7 @@ import avatar from '../Assets/Images/avatar.png';
 console.log(avatar);
 
 function Home(props){
+    localStorage.clear()
     return(
         <div style={{width: '100%'}}>
             <Grid className="landing-grid">
