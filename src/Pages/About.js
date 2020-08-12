@@ -46,7 +46,7 @@ function About(props){
                             <ul>
                                 <li><strong>Full-Stack Development:</strong> I love being involved in a project from start to finish and understand the ins and outs of how everything fits and works together</li>
                                 <br/><li><strong>Building:</strong> I have a passion for building in both the digital and physical world! Whether it be programming, designing, knitting, or sewing, I'm always looking for new ways to get creative and innovative</li>
-                                <br/><li><strong>Deep Learning:</strong> I recently had the priviledge of exploring the concept of neural networks on an 8-month research project. This is something that deeply interests me that I am continuing learning through online courses/resources</li>
+                                <br/><li><strong>Deep Learning:</strong> I recently had the privilege of exploring the concept of neural networks on an 8-month research project. This is something that deeply interests me that I am continuing learning through online courses/resources</li>
                                 <br/><li><strong>Languages:</strong> Learning new languages is a passion of mine that extends even beyond software development. In addition to the programming languages I'm experienced in, I'm also fluent in English, French, and Romanian! I'm always practicing new programming languages, and am learning Italian in my spare time</li>
                             </ul>
                         </div>
